@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inchicken_dish.name %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @inchicken_dish.information %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @inchicken_dish.price %>
+</p>
+
+<%= link_to 'Edit', edit_inchicken_dish_path(@inchicken_dish) %> |
+<%= link_to 'Back', inchicken_dishes_path %>

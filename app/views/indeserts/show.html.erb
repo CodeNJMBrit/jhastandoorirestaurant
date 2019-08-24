@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @indesert.name %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @indesert.information %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @indesert.price %>
+</p>
+
+<%= link_to 'Edit', edit_indesert_path(@indesert) %> |
+<%= link_to 'Back', indeserts_path %>

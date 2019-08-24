@@ -1,0 +1,32 @@
+<%= form_with(model: injhas_special_biryani_dish, local: true) do |form| %>
+  <% if injhas_special_biryani_dish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(injhas_special_biryani_dish.errors.count, "error") %> prohibited this injhas_special_biryani_dish from being saved:</h2>
+
+      <ul>
+      <% injhas_special_biryani_dish.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :information %>
+    <%= form.text_area :information %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

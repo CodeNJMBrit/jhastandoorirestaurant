@@ -1,0 +1,2 @@
+class Indesert < ApplicationRecord
+end

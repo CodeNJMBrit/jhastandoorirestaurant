@@ -1,0 +1,2 @@
+class InriceDish < ApplicationRecord
+end

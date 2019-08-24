@@ -1,0 +1,2 @@
+class InchickenDish < ApplicationRecord
+end

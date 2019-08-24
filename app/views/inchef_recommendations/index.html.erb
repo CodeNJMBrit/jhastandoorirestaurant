@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Inchef Recommendations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Information</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inchef_recommendations.each do |inchef_recommendation| %>
+      <tr>
+        <td><%= inchef_recommendation.name %></td>
+        <td><%= inchef_recommendation.information %></td>
+        <td><%= inchef_recommendation.price %></td>
+        <td><%= link_to 'Show', inchef_recommendation %></td>
+        <td><%= link_to 'Edit', edit_inchef_recommendation_path(inchef_recommendation) %></td>
+        <td><%= link_to 'Destroy', inchef_recommendation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inchef Recommendation', new_inchef_recommendation_path %>

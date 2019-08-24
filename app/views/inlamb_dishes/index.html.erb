@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Inlamb Dishes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Information</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inlamb_dishes.each do |inlamb_dish| %>
+      <tr>
+        <td><%= inlamb_dish.name %></td>
+        <td><%= inlamb_dish.information %></td>
+        <td><%= inlamb_dish.price %></td>
+        <td><%= link_to 'Show', inlamb_dish %></td>
+        <td><%= link_to 'Edit', edit_inlamb_dish_path(inlamb_dish) %></td>
+        <td><%= link_to 'Destroy', inlamb_dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inlamb Dish', new_inlamb_dish_path %>

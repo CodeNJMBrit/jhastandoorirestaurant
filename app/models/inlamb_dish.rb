@@ -1,0 +1,2 @@
+class InlambDish < ApplicationRecord
+end

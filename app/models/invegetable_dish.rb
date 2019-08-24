@@ -1,0 +1,2 @@
+class InvegetableDish < ApplicationRecord
+end

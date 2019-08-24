@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @intandoori.name %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @intandoori.information %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @intandoori.price %>
+</p>
+
+<%= link_to 'Edit', edit_intandoori_path(@intandoori) %> |
+<%= link_to 'Back', intandooris_path %>

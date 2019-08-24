@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inrice_dish.name %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @inrice_dish.information %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @inrice_dish.price %>
+</p>
+
+<%= link_to 'Edit', edit_inrice_dish_path(@inrice_dish) %> |
+<%= link_to 'Back', inrice_dishes_path %>

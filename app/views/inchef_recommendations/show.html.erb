@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inchef_recommendation.name %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @inchef_recommendation.information %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @inchef_recommendation.price %>
+</p>
+
+<%= link_to 'Edit', edit_inchef_recommendation_path(@inchef_recommendation) %> |
+<%= link_to 'Back', inchef_recommendations_path %>

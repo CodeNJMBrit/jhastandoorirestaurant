@@ -1,0 +1,2 @@
+class Instarter < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module InseaFoodsHelper
+end

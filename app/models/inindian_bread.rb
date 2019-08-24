@@ -1,0 +1,2 @@
+class InindianBread < ApplicationRecord
+end

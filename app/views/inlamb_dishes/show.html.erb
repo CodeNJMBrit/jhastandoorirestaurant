@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @inlamb_dish.name %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @inlamb_dish.information %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @inlamb_dish.price %>
+</p>
+
+<%= link_to 'Edit', edit_inlamb_dish_path(@inlamb_dish) %> |
+<%= link_to 'Back', inlamb_dishes_path %>

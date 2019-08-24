@@ -1,0 +1,2 @@
+class Intandoori < ApplicationRecord
+end

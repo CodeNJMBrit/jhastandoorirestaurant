@@ -1,0 +1,2 @@
+module InriceDishesHelper
+end

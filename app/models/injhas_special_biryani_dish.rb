@@ -1,0 +1,2 @@
+class InjhasSpecialBiryaniDish < ApplicationRecord
+end

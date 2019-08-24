@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Injhas Special Biryani Dishes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Information</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @injhas_special_biryani_dishes.each do |injhas_special_biryani_dish| %>
+      <tr>
+        <td><%= injhas_special_biryani_dish.name %></td>
+        <td><%= injhas_special_biryani_dish.information %></td>
+        <td><%= injhas_special_biryani_dish.price %></td>
+        <td><%= link_to 'Show', injhas_special_biryani_dish %></td>
+        <td><%= link_to 'Edit', edit_injhas_special_biryani_dish_path(injhas_special_biryani_dish) %></td>
+        <td><%= link_to 'Destroy', injhas_special_biryani_dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Injhas Special Biryani Dish', new_injhas_special_biryani_dish_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Inchicken Dishes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Information</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inchicken_dishes.each do |inchicken_dish| %>
+      <tr>
+        <td><%= inchicken_dish.name %></td>
+        <td><%= inchicken_dish.information %></td>
+        <td><%= inchicken_dish.price %></td>
+        <td><%= link_to 'Show', inchicken_dish %></td>
+        <td><%= link_to 'Edit', edit_inchicken_dish_path(inchicken_dish) %></td>
+        <td><%= link_to 'Destroy', inchicken_dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Inchicken Dish', new_inchicken_dish_path %>

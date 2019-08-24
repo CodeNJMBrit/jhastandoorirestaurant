@@ -1,0 +1,2 @@
+module InchickenDishesHelper
+end

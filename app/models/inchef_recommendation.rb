@@ -1,0 +1,2 @@
+class InchefRecommendation < ApplicationRecord
+end

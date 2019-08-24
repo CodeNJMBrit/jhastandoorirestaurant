@@ -1,0 +1,2 @@
+module InhouseMenuHelper
+end

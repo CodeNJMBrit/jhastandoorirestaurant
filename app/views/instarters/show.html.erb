@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @instarter.name %>
+</p>
+
+<p>
+  <strong>Information:</strong>
+  <%= @instarter.information %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @instarter.price %>
+</p>
+
+<%= link_to 'Edit', edit_instarter_path(@instarter) %> |
+<%= link_to 'Back', instarters_path %>
