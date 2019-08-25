@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 gem 'rails', '~> 5.2.2'
-gem "nokogiri", ">= 1.10.4" # use  '-- --use-system-libraries' without '' to slow down gem installation time 
+gem "nokogiri", ">= 1.10.4" # use  '-- --use-system-libraries' without '' to speed up gem installation time
 gem 'mysql2'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
