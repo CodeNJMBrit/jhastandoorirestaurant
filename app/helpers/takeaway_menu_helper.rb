@@ -1,0 +1,2 @@
+module TakeawayMenuHelper
+end
