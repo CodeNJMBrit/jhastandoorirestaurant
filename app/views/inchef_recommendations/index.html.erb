@@ -17,7 +17,7 @@
       <tr>
         <td><%= inchef_recommendation.name %></td>
         <td><%= inchef_recommendation.information %></td>
-        <td><%= inchef_recommendation.price %></td>
+        <td>£<%= inchef_recommendation.price %></td>
         <td><%= link_to 'Show', inchef_recommendation %></td>
         <td><%= link_to 'Edit', edit_inchef_recommendation_path(inchef_recommendation) %></td>
         <td><%= link_to 'Destroy', inchef_recommendation, method: :delete, data: { confirm: 'Are you sure?' } %></td>

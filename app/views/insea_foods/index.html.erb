@@ -17,7 +17,7 @@
       <tr>
         <td><%= insea_food.name %></td>
         <td><%= insea_food.information %></td>
-        <td><%= insea_food.price %></td>
+        <td>£<%= insea_food.price %></td>
         <td><%= link_to 'Show', insea_food %></td>
         <td><%= link_to 'Edit', edit_insea_food_path(insea_food) %></td>
         <td><%= link_to 'Destroy', insea_food, method: :delete, data: { confirm: 'Are you sure?' } %></td>

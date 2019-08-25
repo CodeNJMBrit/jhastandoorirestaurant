@@ -17,7 +17,7 @@
       <tr>
         <td><%= instarter.name %></td>
         <td><%= instarter.information %></td>
-        <td><%= instarter.price %></td>
+        <td>£<%= instarter.price %></td>
         <td><%= link_to 'Show', instarter %></td>
         <td><%= link_to 'Edit', edit_instarter_path(instarter) %></td>
         <td><%= link_to 'Destroy', instarter, method: :delete, data: { confirm: 'Are you sure?' } %></td>

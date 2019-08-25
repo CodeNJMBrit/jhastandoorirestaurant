@@ -17,7 +17,7 @@
       <tr>
         <td><%= inlamb_dish.name %></td>
         <td><%= inlamb_dish.information %></td>
-        <td><%= inlamb_dish.price %></td>
+        <td>£<%= inlamb_dish.price %></td>
         <td><%= link_to 'Show', inlamb_dish %></td>
         <td><%= link_to 'Edit', edit_inlamb_dish_path(inlamb_dish) %></td>
         <td><%= link_to 'Destroy', inlamb_dish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
