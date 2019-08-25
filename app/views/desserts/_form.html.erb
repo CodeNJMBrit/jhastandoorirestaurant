@@ -1,10 +1,10 @@
-<%= form_with(model: indesert, local: true) do |form| %>
-  <% if indesert.errors.any? %>
+<%= form_with(model: dessert, local: true) do |form| %>
+  <% if dessert.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(indesert.errors.count, "error") %> prohibited this indesert from being saved:</h2>
+      <h2><%= pluralize(dessert.errors.count, "error") %> prohibited this dessert from being saved:</h2>
 
       <ul>
-      <% indesert.errors.full_messages.each do |message| %>
+      <% dessert.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= form.label :information %>
-    <%= form.text_field :information %>
+    <%= form.text_area :information %>
   </div>
 
   <div class="field">

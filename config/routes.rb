@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :inhouse_menus
-  resources :indeserts
+  resources :desserts
   resources :inindian_breads
   resources :inrice_dishes
   resources :injhas_special_biryani_dishes
