@@ -18,7 +18,7 @@ gem "bootstrap_form",
 gem 'best_in_place', '~> 3.0.1'
 gem 'devise'
 gem 'sidekiq'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
